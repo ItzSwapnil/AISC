@@ -1,1 +1,1 @@
-# AISC
+# AISC (Artificial Intelligence Security Camera)
