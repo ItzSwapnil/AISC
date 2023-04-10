@@ -58,7 +58,7 @@ current_user = None
 unauthorized_user = None
 
 while True:
-    # Capture frams
+    # Capture frames
     ret, frame = video_capture.read()
 
     # Find all the faces
