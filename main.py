@@ -42,8 +42,8 @@ known_face_encodings = [
     ]
 # known faces location
 known_face_names = []
-for image_file in os.listdir("D:\Projects\AISC\img\lib"):
-    image_path = os.path.join("D:\Projects\AISC\img\lib", image_file)
+for image_file in os.listdir("D:/Projects/AISC/img/lib"):
+    image_path = os.path.join("D:/Projects/AISC/img/lib", image_file)
     image = cv2.imread(image_path)
     face_encoding = face_recognition.face_encodings(image)[0]
     known_face_encodings.append(face_encoding)
