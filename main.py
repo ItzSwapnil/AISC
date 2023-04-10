@@ -84,6 +84,11 @@ while True:
             # 5sec Cooldown
             if time.time() - start_time > 5:
                 unauthorized_user = None
+            else:
+                # Save unauthorized user's frame
+                filename = f"unauthorized_user_{time.time()}.jpg"
+                filepath = os.path.join("D:/Projects/AISC/img/unauthorized_users", filename)
+                cv2.imwrite(filepath, unauthorized_user)
 
     # If not authorized
     if current_user is None and unauthorized_user is not None:
